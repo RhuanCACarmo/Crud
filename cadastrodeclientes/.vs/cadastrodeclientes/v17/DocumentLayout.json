@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|c:\\users\\rhuan.cacarmo\\source\\repos\\crud\\cadastrodeclientes\\cadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|solutionrelative:cadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|solutionrelative:cadastrodeclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57031724-BA66-4190-B78D-9328D1B1B318}|cadastrodeclientes\\cadastrodeclientes.csproj|solutionrelative:cadastrodeclientes\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "cadastrodeclientes\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.Designer.cs",
+              "RelativeToolTip": "cadastrodeclientes\\Form1.Designer.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAswL0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:22:23.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.cs",
+              "RelativeDocumentMoniker": "cadastrodeclientes\\Form1.cs",
+              "ToolTip": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.cs",
+              "RelativeToolTip": "cadastrodeclientes\\Form1.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:22:17.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.cs",
+              "RelativeDocumentMoniker": "cadastrodeclientes\\Form1.cs",
+              "ToolTip": "C:\\Users\\rhuan.cacarmo\\source\\repos\\Crud\\cadastrodeclientes\\cadastrodeclientes\\Form1.cs [Design]",
+              "RelativeToolTip": "cadastrodeclientes\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:21:14.033Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

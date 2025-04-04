@@ -1,0 +1,10 @@
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\bin\ARM64\Debug\cadastrodeclientes.exe.config
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\bin\ARM64\Debug\cadastrodeclientes.exe
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\bin\ARM64\Debug\cadastrodeclientes.pdb
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.csproj.AssemblyReference.cache
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.frmCadastroClientes.resources
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.Properties.Resources.resources
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.csproj.GenerateResource.cache
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.csproj.CoreCompileInputs.cache
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.exe
+C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\ARM64\Debug\cadastrodeclientes.pdb
