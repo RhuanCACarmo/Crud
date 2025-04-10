@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCadastroClientes = new System.Windows.Forms.Label();
             this.tbCadastro = new System.Windows.Forms.TabControl();
@@ -40,11 +41,16 @@
             this.lblNomeSocial = new System.Windows.Forms.Label();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.lblNomeCompleto = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tbConsulta = new System.Windows.Forms.TabPage();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.lstCliente = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.tbCadastro.SuspendLayout();
             this.tbDadosClientes.SuspendLayout();
+            this.tbConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,12 +77,12 @@
             // tbCadastro
             // 
             this.tbCadastro.Controls.Add(this.tbDadosClientes);
-            this.tbCadastro.Controls.Add(this.tabPage2);
+            this.tbCadastro.Controls.Add(this.tbConsulta);
             this.tbCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCadastro.Location = new System.Drawing.Point(12, 106);
             this.tbCadastro.Name = "tbCadastro";
             this.tbCadastro.SelectedIndex = 0;
-            this.tbCadastro.Size = new System.Drawing.Size(776, 273);
+            this.tbCadastro.Size = new System.Drawing.Size(776, 302);
             this.tbCadastro.TabIndex = 1;
             // 
             // tbDadosClientes
@@ -92,7 +98,7 @@
             this.tbDadosClientes.Location = new System.Drawing.Point(4, 29);
             this.tbDadosClientes.Name = "tbDadosClientes";
             this.tbDadosClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tbDadosClientes.Size = new System.Drawing.Size(768, 240);
+            this.tbDadosClientes.Size = new System.Drawing.Size(768, 269);
             this.tbDadosClientes.TabIndex = 0;
             this.tbDadosClientes.Text = "Dados de clientes";
             this.tbDadosClientes.UseVisualStyleBackColor = true;
@@ -118,7 +124,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(159, 141);
+            this.txtEmail.Location = new System.Drawing.Point(159, 144);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(429, 26);
             this.txtEmail.TabIndex = 5;
@@ -135,7 +141,7 @@
             // 
             // txtNomeSocial
             // 
-            this.txtNomeSocial.Location = new System.Drawing.Point(159, 95);
+            this.txtNomeSocial.Location = new System.Drawing.Point(159, 98);
             this.txtNomeSocial.Name = "txtNomeSocial";
             this.txtNomeSocial.Size = new System.Drawing.Size(429, 26);
             this.txtNomeSocial.TabIndex = 3;
@@ -167,35 +173,72 @@
             this.lblNomeCompleto.TabIndex = 0;
             this.lblNomeCompleto.Text = "Nome Completo";
             // 
-            // tabPage2
+            // tbConsulta
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 240);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Consulta";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tbConsulta.Controls.Add(this.lstCliente);
+            this.tbConsulta.Controls.Add(this.btnPesquisar);
+            this.tbConsulta.Controls.Add(this.txtbuscar);
+            this.tbConsulta.Location = new System.Drawing.Point(4, 29);
+            this.tbConsulta.Name = "tbConsulta";
+            this.tbConsulta.Padding = new System.Windows.Forms.Padding(3);
+            this.tbConsulta.Size = new System.Drawing.Size(768, 269);
+            this.tbConsulta.TabIndex = 1;
+            this.tbConsulta.Text = "Consulta";
+            this.tbConsulta.UseVisualStyleBackColor = true;
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(23, 18);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(465, 26);
+            this.txtbuscar.TabIndex = 0;
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(39, 397);
+            this.btnSalvar.Location = new System.Drawing.Point(39, 414);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(117, 37);
+            this.btnSalvar.Size = new System.Drawing.Size(117, 46);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisar.Location = new System.Drawing.Point(575, 11);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(137, 40);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // lstCliente
+            // 
+            this.lstCliente.HideSelection = false;
+            this.lstCliente.Location = new System.Drawing.Point(23, 64);
+            this.lstCliente.Name = "lstCliente";
+            this.lstCliente.Size = new System.Drawing.Size(689, 190);
+            this.lstCliente.TabIndex = 2;
+            this.lstCliente.UseCompatibleStateImageBehavior = false;
             // 
             // frmCadastroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 472);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.tbCadastro);
             this.Controls.Add(this.panel1);
@@ -206,6 +249,8 @@
             this.tbCadastro.ResumeLayout(false);
             this.tbDadosClientes.ResumeLayout(false);
             this.tbDadosClientes.PerformLayout();
+            this.tbConsulta.ResumeLayout(false);
+            this.tbConsulta.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -216,7 +261,7 @@
         private System.Windows.Forms.Label lblCadastroClientes;
         private System.Windows.Forms.TabControl tbCadastro;
         private System.Windows.Forms.TabPage tbDadosClientes;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tbConsulta;
         private System.Windows.Forms.Label lblNomeCompleto;
         private System.Windows.Forms.TextBox txtNomeSocial;
         private System.Windows.Forms.Label lblNomeSocial;
@@ -226,6 +271,10 @@
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.TextBox txtbuscar;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ListView lstCliente;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }
 
