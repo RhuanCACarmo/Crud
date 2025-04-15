@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cadastrodeclientes",
+    "\\cadastrodeclientes\\cadastrodeclientes"
   ],
+  "SelectedNode": "\\cadastrodeclientes\\cadastrodeclientes\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
