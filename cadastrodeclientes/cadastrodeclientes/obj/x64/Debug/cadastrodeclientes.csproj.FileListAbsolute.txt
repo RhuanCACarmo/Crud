@@ -38,6 +38,6 @@ C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\o
 C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.Properties.Resources.resources
 C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.csproj.GenerateResource.cache
 C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.csproj.CoreCompileInputs.cache
-C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastro.E5FBCFE7.Up2Date
 C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.exe
 C:\Users\rhuan.cacarmo\source\repos\crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.pdb
+C:\Users\rhuan.cacarmo\source\repos\Crud\cadastrodeclientes\cadastrodeclientes\obj\x64\Debug\cadastrodeclientes.csproj.CopyComplete

@@ -327,5 +327,10 @@ namespace cadastrodeclientes
 
             txtNomeCompleto.Focus();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cliente Excluido");
+        }
     }
 }
