@@ -33,6 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCadastroClientes = new System.Windows.Forms.Label();
             this.tbCadastro = new System.Windows.Forms.TabControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tbDadosClientes = new System.Windows.Forms.TabPage();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.lblCPF = new System.Windows.Forms.Label();
@@ -47,15 +49,13 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnNovoCliente = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tbCadastro.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.tbDadosClientes.SuspendLayout();
             this.tbConsulta.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,6 +90,20 @@
             this.tbCadastro.SelectedIndex = 0;
             this.tbCadastro.Size = new System.Drawing.Size(776, 302);
             this.tbCadastro.TabIndex = 1;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(150, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Text = "Excluir Cliente";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // tbDadosClientes
             // 
@@ -236,13 +250,6 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            // 
             // btnNovoCliente
             // 
             this.btnNovoCliente.BackColor = System.Drawing.Color.Green;
@@ -259,24 +266,18 @@
             this.btnNovoCliente.UseVisualStyleBackColor = false;
             this.btnNovoCliente.Click += new System.EventHandler(this.btnNovoCliente_Click);
             // 
-            // button1
+            // btnExcluirCliente
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(667, 414);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 46);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Deletar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "Excluir Cliente";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.btnExcluirCliente.BackColor = System.Drawing.Color.Red;
+            this.btnExcluirCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirCliente.ForeColor = System.Drawing.Color.White;
+            this.btnExcluirCliente.Location = new System.Drawing.Point(667, 414);
+            this.btnExcluirCliente.Name = "btnExcluirCliente";
+            this.btnExcluirCliente.Size = new System.Drawing.Size(117, 46);
+            this.btnExcluirCliente.TabIndex = 4;
+            this.btnExcluirCliente.Text = "Deletar";
+            this.btnExcluirCliente.UseVisualStyleBackColor = false;
+            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
             // 
             // frmCadastroClientes
             // 
@@ -284,7 +285,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 472);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExcluirCliente);
             this.Controls.Add(this.btnNovoCliente);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.tbCadastro);
@@ -294,11 +295,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tbCadastro.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.tbDadosClientes.ResumeLayout(false);
             this.tbDadosClientes.PerformLayout();
             this.tbConsulta.ResumeLayout(false);
             this.tbConsulta.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -324,7 +325,7 @@
         private System.Windows.Forms.ListView lstCliente;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnNovoCliente;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExcluirCliente;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

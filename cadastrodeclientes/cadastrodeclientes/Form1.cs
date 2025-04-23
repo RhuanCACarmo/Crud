@@ -16,7 +16,7 @@ using Mysqlx.Resultset;
 
 namespace cadastrodeclientes
 {
-    public partial class frmCadastroClientes: Form
+    public partial class frmCadastroClientes : Form
     {
         //Conexão com o banco de dados SQL
         MySqlConnection Conexao;
@@ -114,7 +114,7 @@ namespace cadastrodeclientes
             string query = "SELECT * FROM dadosdecliente ORDER BY codigo DESC";
             carregar_clientes_com_query(query);
         }
-        
+
         //Validação Regex
         private bool isValidEmail(string email)
         {
@@ -127,8 +127,8 @@ namespace cadastrodeclientes
         {
             //Remover quaisquer caracteres não numéricos (como pontos e traços)
             cpf = cpf.Replace(".", "").Replace("-", "");
-            
-            if(cpf.Length !=11 || !cpf.All(char.IsDigit))
+
+            if (cpf.Length != 11 || !cpf.All(char.IsDigit))
             {
                 return false;
             }
@@ -237,7 +237,7 @@ namespace cadastrodeclientes
             catch (MySqlException ex)
             {
                 //Trata erros relacionados ao MySQL
-                MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message,"Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             catch (Exception ex)
@@ -253,7 +253,7 @@ namespace cadastrodeclientes
                 {
                     Conexao.Close();
 
-                   // MessageBox.Show("Conexão fechada com sucesso.");
+                    // MessageBox.Show("Conexão fechada com sucesso.");
                 }
             }
         }
@@ -331,9 +331,17 @@ namespace cadastrodeclientes
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            excluir_cliente();
+        }
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
+        {
+            excluir_cliente();
+        }
+        private void excluir_cliente()
+        {
             try
             {
-                DialogResult opcaoDigitada = MessageBox.Show("Tem certeza que deseja excluir o registo?","Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult opcaoDigitada = MessageBox.Show("Tem certeza que deseja excluir o registo?", "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (opcaoDigitada == DialogResult.Yes)
                 {
@@ -381,6 +389,7 @@ namespace cadastrodeclientes
                     // MessageBox.Show("Conexão fechada com sucesso.");
                 }
             }
-        }    
+        }
     }
 }
+
