@@ -328,9 +328,59 @@ namespace cadastrodeclientes
             txtNomeCompleto.Focus();
         }
 
+
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cliente Excluido");
-        }
+            try
+            {
+                DialogResult opcaoDigitada = MessageBox.Show("Tem certeza que deseja excluir o registo?","Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (opcaoDigitada == DialogResult.Yes)
+                {
+                    Conexao = new MySqlConnection(data_source);
+
+                    Conexao.Open();
+
+                    MySqlCommand cmd = new MySqlCommand();
+
+                    cmd.Connection = Conexao;
+
+                    cmd.Prepare();
+
+                    cmd.CommandText = "DELETE FROM dadosdecliente WHERE codigo = @codigo";
+
+                    cmd.Parameters.AddWithValue("@codigo", codigo_cliente);
+
+                    cmd.ExecuteNonQuery();
+
+                    //Excluir no banco de dados
+                    MessageBox.Show("Registro Excluido com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    carregar_clientes();
+                }
+            }
+            catch (MySqlException ex)
+            {
+                //Trata erros relacionados ao MySQL
+                MessageBox.Show("Erro " + ex.Number + " Ocorreu: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            catch (Exception ex)
+            {
+                //Trata outro tipos de erros.
+                MessageBox.Show("Ocorreu: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            finally
+            {
+                //Garante que a conexão com o banco de dados será fechada, mesmo se ocorrer um erro.
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+
+                    // MessageBox.Show("Conexão fechada com sucesso.");
+                }
+            }
+        }    
     }
 }
